@@ -1,7 +1,16 @@
-<section id="menu">
-    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-    <mat-menu #menu="matMenu">
-        <button mat-menu-item>Item 1</button>
-        <button mat-menu-item>Item 2</button>
-    </mat-menu>
+<section id="navigation">
+    <div class="logo">
+        <img class="logo" src="../assets/images/logo.png" [routerLink]="['/']" />
+    </div>
+    <div class="menu">
+        <button mat-button color="primary">HOME</button>
+        <button mat-raised-button color="primary">ABOUT</button>
+        <button mat-raised-button color="primary">SERVICE</button>
+        <button mat-raised-button color="primary">PRIVACY POLICY</button>
+        <button mat-raised-button color="primary">CAFE/LOUNGE</button>
+        <button mat-raised-button color="primary">SIGN UP</button>
+        <button mat-raised-button color="primary">TIME TABLE</button>
+        <button mat-raised-button color="primary">MEET OUR STAFF</button>
+        <button mat-raised-button color="primary">CONTACT US</button>
+    </div>
 </section>
