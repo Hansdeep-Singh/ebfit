@@ -53,6 +53,10 @@ $ebfit-body-typography: mat.define-legacy-typography-config($font-family: $font-
 //   outline: 1px solid rgb(174, 255, 0) !important;
 // }
 
+.grid {
+  box-sizing: border-box;
+  outline: 1px solid rgb(65, 65, 65) !important;
+}
 
 html,
 body {
@@ -82,11 +86,19 @@ ul {
     font-weight: bold;
     line-height: 2.5rem;
     list-style: none;
-
-    i {
-      margin-right: 2rem;
-    }
   }
+}
+
+i {
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  font-size: 2rem;
+  border-radius: 7px;
+
+}
+
+i:hover {
+  box-shadow: inset 100px 0 0 0 $secondary-100;
+  color: white;
 }
 
 .spacer-1 {
@@ -317,17 +329,7 @@ ul {
     gap: 0.4rem;
     margin-right: 0.4rem;
 
-    i {
-      transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-      padding: 0.4rem;
 
-      border-radius: $border-circle;
-    }
-
-    i:hover {
-      box-shadow: inset 100px 0 0 0 $secondary-100;
-      color: white;
-    }
   }
 
   img {
@@ -339,14 +341,59 @@ ul {
 #footer {
   footer {
     padding: 20px 0;
-    background-color: #272727;
 
-    h5 {
-      color: #d71827;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
 
-    p {
-      color: white;
+    .col {
+      display: flex;
+      justify-content: center;
+    }
+
+    .col-lg-5 {
+      padding: 20px;
+      border-radius: 30% 70% 59% 41% / 30% 30% 70% 70%;
+      background: rgb(220, 70, 180);
+      background: linear-gradient(90deg, rgba(220, 70, 180, 1) 0%, rgba(254, 183, 91, 1) 81%, rgba(254, 183, 91, 1) 100%);
+      width: 523px;
+      height: 400px;
+
+      .contact {
+        margin-right: 20px;
+        color: $white-100;
+
+        i {
+          color: black;
+        }
+
+        i:hover {
+          color: initial;
+        }
+
+        .box {
+          display: flex;
+          align-items: center;
+
+          .icon {
+            background-color: rgb(255, 255, 255);
+            width: 70px;
+            height: 70px;
+            border-radius: $border-circle;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+          }
+
+          .box-info {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
     }
   }
 }

@@ -9,20 +9,28 @@ import { MaterialModule } from './material.module';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 
+import { HansLibModule, MouseService, ScreenService } from 'hans-lib';
+import { environment } from 'src/environments/environment';
+import { FooterComponent } from './footer/footer.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HansLibModule.forRoot({ apiUrl: environment.ROOT_URL }),
   ],
-  providers: [],
+  providers: [ScreenService,
+    MouseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
