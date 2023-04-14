@@ -4,7 +4,7 @@ $font-button: M PLUS Rounded 1c;
 $font-statement: 'Pacifico', cursive;
 
 //Body
-$body-background: #F3F5F6;
+$body-background: hsl(200, 14%, 96%);
 
 //Primary
 $primary-100: hsl(193, 98%, 63%);
@@ -18,9 +18,13 @@ $secondary-100: hsl(356, 80%, 48%);
 $black-100: hsl(0, 0%, 0%);
 $black-200: hsl(0, 0%, 10%);
 $black-300: hsl(0, 0%, 20%);
+$black-400: hsl(0, 0%, 30%);
+$black-500: hsl(0, 0%, 40%);
+
+
 
 $tertiary-100: #FF5723;
-$white-100: #ffffff;
+$white-100: hsl(0, 0%, 100%);
 $border-radius: 25px;
 $border-radius-25: 25%;
 $border-circle: 50%;

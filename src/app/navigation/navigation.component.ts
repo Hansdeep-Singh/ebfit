@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScreenService } from 'hans-lib';
 
 @Component({
   selector: 'eb-navigation',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private screenService: ScreenService) { }
 
   ngOnInit(): void {
+
+  }
+  get desktop() {
+    console.log(this.screenService.screenWidth$.value);
+    return (this.screenService.screenWidth$.value > 1072);
   }
 
 }

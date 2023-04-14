@@ -24,7 +24,7 @@
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4",
-    "hans-lib": "file:../AngularLibrary/dist/hans-lib/hans-lib-0.0.66.tgz"
+    "hans-lib": "file:../AngularLibrary/dist/hans-lib/hans-lib-0.0.67.tgz"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.2.4",

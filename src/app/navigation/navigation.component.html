@@ -1,26 +1,56 @@
-<section id="navigation">
-    <div class="logo">
-        <img class="logo" src="../assets/images/logo.png" [routerLink]="['/']" />
-    </div>
-    <div>
-        <h1 class="text-light">WEBSITE UNDER CONSTRUCTION (information under corrections)</h1>
-    </div>
-    <div class="menu-social">
-
-        <div class="menu">
-
-            <button mat-raised-button color="primary">About Us</button>
-            <button mat-raised-button color="primary">Our Services</button>
-            <button mat-raised-button color="primary">EB Shop</button>
-            <button mat-raised-button color="primary">Time Table</button>
-            <button mat-raised-button color="primary">Contact Us</button>
+<ng-container *ngIf="desktop; else mobile">
+    <section id="navigation">
+        <div class="logo">
+            <img class="logo" src="../assets/images/logo.png" [routerLink]="['/']" />
         </div>
-        <div class="social">
-            <i class="fab fa-facebook fa-fw"></i>
-            <i class="fab fa-twitter fa-fw"></i>
-            <i class="fab fa-youtube fa-fw"></i>
-            <i class="fab fa-instagram fa-fw"></i>
-            <i class="fab fa-tiktok fa-fw"></i>
+        <!-- <div>
+            <h1 class="text-light">WEBSITE UNDER CONSTRUCTION (information under corrections)</h1>
+        </div> -->
+        <div class="menu-social">
+            <div class="menu">
+                <button mat-raised-button color="primary">About Us</button>
+                <button mat-raised-button color="primary">Our Services</button>
+                <button mat-raised-button color="primary">EB Shop</button>
+                <button mat-raised-button color="primary">Time Table</button>
+                <button mat-raised-button color="primary">Contact Us</button>
+            </div>
+            <div class="social">
+                <i class="fab fa-facebook fa-fw"></i>
+                <i class="fab fa-twitter fa-fw"></i>
+                <i class="fab fa-youtube fa-fw"></i>
+                <i class="fab fa-instagram fa-fw"></i>
+                <i class="fab fa-tiktok fa-fw"></i>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</ng-container>
+
+<ng-template #mobile>
+    <section id="navigation">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon class="text-light">more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon>sports_gymnastics</mat-icon>
+                <span>About Us</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>fitness_center</mat-icon>
+                <span>Our Services</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>shopping_cart</mat-icon>
+                <span>Eb Shop</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>pending_actions</mat-icon>
+                <span>Time Table</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>call</mat-icon>
+                <span>Contact Us</span>
+            </button>
+        </mat-menu>
+    </section>
+</ng-template>
