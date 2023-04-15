@@ -8,11 +8,11 @@
         </div> -->
         <div class="menu-social">
             <div class="menu">
-                <button mat-raised-button color="primary">About Us</button>
-                <button mat-raised-button color="primary">Our Services</button>
-                <button mat-raised-button color="primary">EB Shop</button>
-                <button mat-raised-button color="primary">Time Table</button>
-                <button mat-raised-button color="primary">Contact Us</button>
+                <button mat-raised-button color="primary">ABOUT US</button>
+                <button mat-raised-button color="primary">SERVICES</button>
+                <button mat-raised-button color="primary">SHOP</button>
+                <button mat-raised-button color="primary">TIME TABLE</button>
+                <button mat-raised-button color="primary">CONTACT</button>
             </div>
             <div class="social">
                 <i class="fab fa-facebook fa-fw"></i>
@@ -27,33 +27,7 @@
 
 <ng-template #mobile>
     <section id="navigation">
-        <div>
-            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-                <mat-icon class="text-light">more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu">
-                <button mat-menu-item>
-                    <mat-icon>sports_gymnastics</mat-icon>
-                    <span>About Us</span>
-                </button>
-                <button mat-menu-item>
-                    <mat-icon>fitness_center</mat-icon>
-                    <span>Our Services</span>
-                </button>
-                <button mat-menu-item>
-                    <mat-icon>shopping_cart</mat-icon>
-                    <span>Eb Shop</span>
-                </button>
-                <button mat-menu-item>
-                    <mat-icon>pending_actions</mat-icon>
-                    <span>Time Table</span>
-                </button>
-                <button mat-menu-item>
-                    <mat-icon>call</mat-icon>
-                    <span>Contact Us</span>
-                </button>
-            </mat-menu>
-        </div>
+        <div> <img class="logo" src="../assets/images/logo-small.png" [routerLink]="['/']" /></div>
         <div>
             <div class="social">
                 <i class="fab fa-facebook fa-2x"></i>
@@ -63,5 +37,35 @@
                 <i class="fab fa-tiktok fa-2x"></i>
             </div>
         </div>
+        <div>
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon class="text-light">more_vert</mat-icon>
+            </button>
+
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                    <mat-icon>sports_gymnastics</mat-icon>
+                    <span>ABOUT US</span>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>fitness_center</mat-icon>
+                    <span>SERVICES</span>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>shopping_cart</mat-icon>
+                    <span>SHOP</span>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>pending_actions</mat-icon>
+                    <span>TIME TABLE</span>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>call</mat-icon>
+                    <span>CONTACT</span>
+                </button>
+            </mat-menu>
+        </div>
+
+
     </section>
 </ng-template>
