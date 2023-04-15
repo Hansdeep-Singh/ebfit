@@ -65,9 +65,7 @@ body {
   background-color: $body-background;
 }
 
-img {
-  width: 100%;
-}
+
 
 body {
   margin: 0;
@@ -130,6 +128,10 @@ i:hover {
     display: flex;
     justify-content: center;
 
+    img {
+      width: 100%;
+    }
+
     h1 {
       color: #d71827;
       font-size: clamp(2rem, 5vw + 1rem, 4rem);
@@ -144,6 +146,10 @@ i:hover {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+
+      div {
+        margin: 40px 0;
+      }
     }
 
 
@@ -225,6 +231,10 @@ i:hover {
   i {
     margin-right: 20px;
   }
+
+  img {
+    width: 100%;
+  }
 }
 
 #offer {
@@ -265,11 +275,11 @@ i:hover {
   background-image: url('./assets/images/staff-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 35vh;
+
   width: 100%;
   position: relative;
   isolation: isolate;
-  overflow: hidden;
+
 
   h1 {
     color: $white-100;
@@ -280,9 +290,21 @@ i:hover {
     color: $secondary-100;
   }
 
+  .col-lg-5 {
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 466px;
+      z-index: 99;
+      margin-top: -30px;
+
+    }
+  }
+
   .col-lg-7 {
     display: flex;
-    height: 35vh;
+
     align-items: center;
   }
 }
@@ -332,6 +354,10 @@ i:hover {
 #footer {
   footer {
     padding: 20px 0;
+
+    img {
+      width: 100%;
+    }
 
     ul {
       display: flex;
