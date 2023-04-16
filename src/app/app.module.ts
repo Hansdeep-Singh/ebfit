@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { HansLibModule, MouseService, ScreenService } from 'hans-lib';
 import { environment } from 'src/environments/environment';
 import { FooterComponent } from './footer/footer.component';
+import { ServicesComponent } from './services/services.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     NavigationComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
