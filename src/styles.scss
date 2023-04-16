@@ -292,6 +292,10 @@ i:hover {
   position: relative;
   isolation: isolate;
 
+  img {
+    height: 466px;
+    margin-top: -30px;
+  }
 
 
   h1 {
@@ -303,18 +307,15 @@ i:hover {
     color: $secondary-100;
   }
 
-  .col-lg-5 {
+  .col-lg-6 {
     display: flex;
     justify-content: center;
     position: relative;
 
-    img {
-      height: 466px;
-      margin-top: -30px;
-    }
+
   }
 
-  .col-lg-5::before {
+  .grad-bg::before {
     content: "";
     position: absolute;
     border-radius: 30% 70% 59% 41% / 30% 30% 70% 70%;
@@ -329,9 +330,8 @@ i:hover {
     background: linear-gradient(90deg, rgba(220, 70, 180, 1) 0%, rgba(254, 183, 91, 1) 81%, rgba(254, 183, 91, 1) 100%);
   }
 
-  .col-lg-7 {
+  .col-lg-6 {
     display: flex;
-
     align-items: center;
   }
 }
