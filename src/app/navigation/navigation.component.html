@@ -9,7 +9,14 @@
         <div class="menu-social">
             <div class="menu">
                 <button mat-raised-button color="primary" [routerLink]="['about']">ABOUT US</button>
-                <button mat-raised-button color="primary" [routerLink]="['services']">SERVICES</button>
+                <button mat-raised-button color="primary" [routerLink]="['services']" mat-button
+                    [matMenuTriggerFor]="services">SERVICES</button>
+                <mat-menu #services="matMenu">
+                    <button mat-menu-item [routerLink]="['trial']">FREE TRIAL OUTDOOR</button>
+                    <button mat-menu-item [routerLink]="['challenge']">SUMMER BODIES CHALLENGE</button>
+                    <button mat-menu-item [routerLink]="['training']">PERSONAL TRAINING</button>
+                    <button mat-menu-item [routerLink]="['lease']">LEASE A ROOM</button>
+                </mat-menu>
                 <button mat-raised-button color="primary">SHOP</button>
                 <button mat-raised-button color="primary">TIME TABLE</button>
                 <button mat-raised-button color="primary">CONTACT</button>

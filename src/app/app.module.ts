@@ -13,6 +13,10 @@ import { HansLibModule, MouseService, ScreenService } from 'hans-lib';
 import { environment } from 'src/environments/environment';
 import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
+import { TrialComponent } from './trial/trial.component';
+import { SummerComponent } from './summer/summer.component';
+import { StuckComponent } from './stuck/stuck.component';
+import { LeaseComponent } from './lease/lease.component';
 
 
 @NgModule({
@@ -22,7 +26,11 @@ import { ServicesComponent } from './services/services.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ServicesComponent
+    ServicesComponent,
+    TrialComponent,
+    SummerComponent,
+    StuckComponent,
+    LeaseComponent
   ],
   imports: [
     BrowserModule,
