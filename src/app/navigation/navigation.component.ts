@@ -14,7 +14,6 @@ export class NavigationComponent implements OnInit {
 
   }
   get desktop() {
-    console.log(this.screenService.screenWidth$.value);
     return (this.screenService.screenWidth$.value > 1072);
   }
 

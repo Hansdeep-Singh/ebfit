@@ -17,9 +17,9 @@
                     <button mat-menu-item [routerLink]="['training']">PERSONAL TRAINING</button>
                     <button mat-menu-item [routerLink]="['lease']">LEASE A ROOM</button>
                 </mat-menu>
-                <button mat-raised-button color="primary">SHOP</button>
-                <button mat-raised-button color="primary">TIME TABLE</button>
-                <button mat-raised-button color="primary">CONTACT</button>
+                <button mat-raised-button [routerLink]="['shop']" color="primary">SHOP</button>
+                <button mat-raised-button [routerLink]="['timetable']" color="primary">TIME TABLE</button>
+                <button mat-raised-button [routerLink]="['contact']" color="primary">CONTACT</button>
             </div>
             <div class="social">
                 <i class="fab fa-facebook fa-fw"></i>

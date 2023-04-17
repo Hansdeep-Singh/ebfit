@@ -17,6 +17,8 @@ import { TrialComponent } from './trial/trial.component';
 import { SummerComponent } from './summer/summer.component';
 import { StuckComponent } from './stuck/stuck.component';
 import { LeaseComponent } from './lease/lease.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { LeaseComponent } from './lease/lease.component';
     TrialComponent,
     SummerComponent,
     StuckComponent,
-    LeaseComponent
+    LeaseComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
