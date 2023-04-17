@@ -38,10 +38,10 @@ const routes: Routes = [{ path: '', component: HomeComponent, pathMatch: 'full' 
   path: 'contact',
   component: ContactComponent,
 },
-  // {
-  //   path: 'lease',
-  //   component: LeaseComponent,
-  // },
+{
+  path: 'lease',
+  component: LeaseComponent,
+},
   // {
   //   path: 'lease',
   //   component: LeaseComponent,
