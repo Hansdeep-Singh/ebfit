@@ -1,0 +1,79 @@
+#notify {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    width: 78%;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .notify-box {
+        z-index: 1;
+        background-color: #fff;
+        padding: 7px 20px;
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    }
+
+    h3 {
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+        color: hsla(228, 100%, 27%, 1);
+    }
+
+    mat-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -26px;
+        right: -26px;
+        padding: 17px;
+        border-radius: 25px;
+        background-color: #fff;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        cursor: pointer;
+
+    }
+
+    .fail {
+        animation: shake 2.82s cubic-bezier(.36, .07, .19, .97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes shake {
+
+        10%,
+        90% {
+            transform: translate3d(-1px, 0, 0);
+        }
+
+        20%,
+        80% {
+            transform: translate3d(2px, 0, 0);
+        }
+
+        30%,
+        50%,
+        70% {
+            transform: translate3d(-4px, 0, 0);
+        }
+
+        40%,
+        60% {
+            transform: translate3d(4px, 0, 0);
+        }
+    }
+
+}

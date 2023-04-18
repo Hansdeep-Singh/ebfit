@@ -8,6 +8,7 @@ import { StuckComponent } from './stuck/stuck.component';
 import { LeaseComponent } from './lease/lease.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ShopComponent } from './shop/shop.component';
 
 const routes: Routes = [{ path: '', component: HomeComponent, pathMatch: 'full' },
 {
@@ -42,10 +43,10 @@ const routes: Routes = [{ path: '', component: HomeComponent, pathMatch: 'full' 
   path: 'lease',
   component: LeaseComponent,
 },
-  // {
-  //   path: 'lease',
-  //   component: LeaseComponent,
-  // },
+{
+  path: 'shop',
+  component: ShopComponent,
+},
   // {
   //   path: 'lease',
   //   component: LeaseComponent,

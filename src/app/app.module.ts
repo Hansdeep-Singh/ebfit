@@ -19,6 +19,10 @@ import { StuckComponent } from './stuck/stuck.component';
 import { LeaseComponent } from './lease/lease.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ShopComponent } from './shop/shop.component';
+import { ContactformComponent } from './contactform/contactform.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NotifyComponent } from './notify/notify.component';
 
 
 @NgModule({
@@ -27,6 +31,7 @@ import { ContactComponent } from './contact/contact.component';
     NavigationComponent,
     HomeComponent,
     HeaderComponent,
+    NotifyComponent,
     FooterComponent,
     ServicesComponent,
     TrialComponent,
@@ -34,13 +39,17 @@ import { ContactComponent } from './contact/contact.component';
     StuckComponent,
     LeaseComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ShopComponent,
+    ContactformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
     HansLibModule.forRoot({ apiUrl: environment.ROOT_URL }),
   ],
   providers: [ScreenService,
