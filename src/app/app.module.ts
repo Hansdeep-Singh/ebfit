@@ -23,6 +23,8 @@ import { ShopComponent } from './shop/shop.component';
 import { ContactformComponent } from './contactform/contactform.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotifyComponent } from './notify/notify.component';
+import { MatttComponent } from './mattt/mattt.component';
+import { MattsComponent } from './matts/matts.component';
 
 
 @NgModule({
@@ -41,7 +43,9 @@ import { NotifyComponent } from './notify/notify.component';
     AboutComponent,
     ContactComponent,
     ShopComponent,
-    ContactformComponent
+    ContactformComponent,
+    MatttComponent,
+    MattsComponent
   ],
   imports: [
     BrowserModule,

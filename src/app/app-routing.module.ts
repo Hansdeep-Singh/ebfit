@@ -9,6 +9,8 @@ import { LeaseComponent } from './lease/lease.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ShopComponent } from './shop/shop.component';
+import { MatttComponent } from './mattt/mattt.component';
+import { MattsComponent } from './matts/matts.component';
 
 const routes: Routes = [{ path: '', component: HomeComponent, pathMatch: 'full' },
 {
@@ -47,6 +49,15 @@ const routes: Routes = [{ path: '', component: HomeComponent, pathMatch: 'full' 
   path: 'shop',
   component: ShopComponent,
 },
+{
+  path: 'mattt',
+  component: MatttComponent,
+},
+{
+  path: 'matts',
+  component: MattsComponent,
+},
+
   // {
   //   path: 'lease',
   //   component: LeaseComponent,

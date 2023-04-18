@@ -9,6 +9,12 @@
         <div class="menu-social">
             <div class="menu">
                 <button mat-raised-button color="primary" [routerLink]="['about']">ABOUT US</button>
+                <button mat-raised-button color="primary" mat-button [matMenuTriggerFor]="team">TEAM</button>
+                <mat-menu #team="matMenu">
+                    <button mat-menu-item [routerLink]="['mattt']">MATT "T"</button>
+                    <button mat-menu-item [routerLink]="['matts']">MATT "S"</button>
+
+                </mat-menu>
                 <button mat-raised-button color="primary" [routerLink]="['services']" mat-button
                     [matMenuTriggerFor]="services">SERVICES</button>
                 <mat-menu #services="matMenu">
@@ -58,6 +64,14 @@
                     <mat-icon>fitness_center</mat-icon>
                     <span [routerLink]="['services']">SERVICES</span>
                 </button>
+
+                <button mat-menu-item [matMenuTriggerFor]="team"> <mat-icon>group</mat-icon>
+                    <span>TEAM</span></button>
+                <mat-menu #team="matMenu">
+                    <button mat-menu-item [routerLink]="['mattt']">MATT "T"</button>
+                    <button mat-menu-item [routerLink]="['matts']">MATT "S"</button>
+                </mat-menu>
+
                 <button mat-menu-item>
                     <mat-icon>shopping_cart</mat-icon>
                     <span>SHOP</span>
